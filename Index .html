@@ -765,11 +765,11 @@
 <footer>
   <div class="footer-logo">Oclus<span>Sense</span></div>
   <div class="footer-links">
-    <a href="mailto:oclussense@gmail.com">✉️ oclussense@gmail.com</a>
+    <a href="mailto:contacto@oclussense.com">✉️ contacto@oclussense.com</a>
     <a href="https://instagram.com/OclusSense" target="_blank" rel="noopener">📸 @OclusSense</a>
     <a href="https://wa.me/524491099884?text=Hola%2C%20me%20interesa%20OclusSense.%20Me%20gustar%C3%ADa%20registrarme%20en%20la%20lista%20de%20espera." target="_blank" rel="noopener">💬 WhatsApp</a>
   </div>
-  <div class="footer-copy">© 2025 OclusSense · Equipo OclusSense · Todos los derechos reservados</div>
+  <div class="footer-copy">©️ 2025 OclusSense · Equipo OclusSense · Todos los derechos reservados</div>
 </footer>
 
 <!-- ===== JAVASCRIPT ===== -->
@@ -792,8 +792,14 @@
     btn.addEventListener('click', () => {
       const item = btn.parentElement;
       const isOpen = item.classList.contains('open');
+
+      // Close all FAQ items
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
+
+      // Toggle clicked item
+      if (!isOpen) {
+        item.classList.add('open');
+      }
     });
   });
 </script>
